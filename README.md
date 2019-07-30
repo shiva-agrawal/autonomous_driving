@@ -146,7 +146,7 @@ After getting the sensor raw data or processed data, this module works to extrac
 * Use of sensor models in form of xacro files for simulation
 * Testing and documentation
 
-![Simulation Results](https://github.com/shiva-agrawal/autonomous_driving/blob/master/02_Perception/Sensors%20simulation%20with%20ROS%20and%20Gazebo/test/results.png)
+![Simulation Results](https://github.com/shiva-agrawal/autonomous_driving/blob/master/02_Perception/Sensors%20simulation%20with%20ROS%20and%20Gazebo/results.JPG)
 
 
 # Robot/Vehicle Modeling and Control 
