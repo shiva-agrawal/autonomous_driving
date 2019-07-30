@@ -63,7 +63,7 @@ Servo| front wheel steer actuator - for lateral control of vehicle
 
 # System architecture
 
-![Project Block diagram](https://github.com/shiva-agrawal/Autonomous_Driving_Project/blob/master/00_Overview/System%20Srchitecture.JPG)
+![Project Block diagram](https://github.com/shiva-agrawal/autonomous_driving/blob/master/00_Overview/System%20Srchitecture.JPG)
 
 # Sensors and Actuators
 
@@ -74,7 +74,7 @@ Actuator Drivers - Subscriber nodes - take motion control information and then a
 
 Complete Hardware Interfacing block diagram is shown below.
 
-<img src="https://github.com/shiva-agrawal/Autonomous_Driving_Project/blob/master/00_Overview/Hardware%20Interface%20Block%20Diagram.jpg" alt="Hardware Architecture" width="550" height = 450/>
+<img src="https://github.com/shiva-agrawal/autonomous_driving/blob/master/00_Overview/Hardware%20Interface%20Block%20Diagram.jpg" width="550" height = 450/>
 
 
 ## Ultrasonic sensors
