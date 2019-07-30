@@ -1,6 +1,6 @@
 # 3D modelling and visualization of Robots using ROS and Gazebo
 
-To develop any new robotic system may be mobile robot, robotic arm, aerial robot, etc., it is impotant to simulate it in the virtual environment with maximum possible real time capabilities. This includes development of ROBOT models, their kinematic and dynamic behaviours, sensors and controllers of the robot and the surrounding environment.
+To develop any new robotic system may be mobile robot, self driving car, etc., it is impotant to simulate it in the virtual environment with maximum possible real time capabilities. This includes development of ROBOT models, their kinematic and dynamic behaviours, sensors and controllers of the robot and the surrounding environment.
 
 Gazebo simulator developed by open source Robotics Foundation offers the ability to accurately and efficiently simulate wide range of robots in complex indoor and outdoor environments. It has a robust physics engine, high-quality graphics, and convenient programmatic and graphical interfaces. 
 
@@ -20,5 +20,6 @@ The model is developed using URDF and XACRO and then LAUNCH files are used to ru
 3. test
     * diff_mobile_robot in gazebo.png - robot in Gazebo
     * diff robot with laser scanner view in gazebo.png - robot with laser scanner in Gazebo
+    * results.jpg - test results together
 
 
