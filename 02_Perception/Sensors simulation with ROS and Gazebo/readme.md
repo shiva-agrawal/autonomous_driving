@@ -15,6 +15,10 @@ Following sensors are simulated under this project:
 
 Apart from velodynes, other sensor models are first created using xacro files for gazebo and then are simulated using ROS launch files. Please note that, the sensor models are not the part of the development of this project and hence are not completely written by me. I have used the references and books to get the model codes. The main aim of the project is to understand, simulate and get insight of each sensor working and measurement data in ROS environment. Hence the simulation and testing of each sensor is done extensively as the part of the project which is also explained in the project report under doc section.
 
+Results of simulation are also shown below:
+
+![Simulation results](https://github.com/shiva-agrawal/autonomous_driving/blob/master/02_Perception/Sensors%20simulation%20with%20ROS%20and%20Gazebo/results.JPG)
+
 
 ## Project Folder structure
 
