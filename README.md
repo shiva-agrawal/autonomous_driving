@@ -82,16 +82,18 @@ Complete Hardware Interfacing block diagram is shown below.
 * Measurement from each sensor is taken one at a time in circular manner and the result for one cycle including all the sensors is send to raspberry pi serially. This driver is developed in C++ using Arduino Sketch.
 * Python script is developed and tested in raspberry pi to get the sensor measurement data. ROS node is planned in future for this. 
 
-Hardware Interfacing | Distance measurement 
+Hardware Interfacing | Ultrasonic distance measurement 
 -----|------------
-<img src = "https://github.com/shiva-agrawal/autonomous_driving/blob/master/01_Sensors%20and%20Actuators/Ultrasonic%20sensors%20(HC-SR04)/hardware.jpg" width = 300 height = 250/> | <img src = "https://github.com/shiva-agrawal/autonomous_driving/blob/master/01_Sensors%20and%20Actuators/Ultrasonic%20sensors%20(HC-SR04)/Ultrasonic_sensors_demo.gif" width = 300 height = 250/>
+<img src = "https://github.com/shiva-agrawal/autonomous_driving/blob/master/01_Sensors%20and%20Actuators/Ultrasonic%20sensors%20(HC-SR04)/hardware.jpg" width = 300 height = 250/> | <img src = "https://github.com/shiva-agrawal/autonomous_driving/blob/master/01_Sensors%20and%20Actuators/Ultrasonic%20sensors%20(HC-SR04)/Ultrasonic_sensors_demo.gif" width = 400 height = 250/>
 
 ## 360 degree LIDAR 
 * As shown in above block diagram, RPLIDAR A1 is interfaced with raspberry pi directly using of the USB ports. 
 * It can measure and send the data in form of angle and range for 360 degree in one scan serially.
 * The ROS publisher node for this sensor is already developed by ROS community and hence it is downloaded and used here directly.
 
-[Block Diagram] + [video or animation]
+Hardware Interfacing | LIDAR point cloud
+-----|------------
+<img src = "https://github.com/shiva-agrawal/autonomous_driving/blob/master/01_Sensors%20and%20Actuators/RPLIDAR%20(360%20degree)/hardware%20interfacing.JPG" width = 300 height = 250/> | <img src = "https://github.com/shiva-agrawal/autonomous_driving/blob/master/01_Sensors%20and%20Actuators/RPLIDAR%20(360%20degree)/LIDAR_demo.gif" width = 400 height = 250/>
 
 ## Camera Module
 * As shown in the block diagram, the camera are first connected to a camera adapter board for raspberry pi.
@@ -99,7 +101,7 @@ Hardware Interfacing | Distance measurement
 * The normal testing script is developed at first using Python and picamera library
 * Then ROS publisher node is developed and tested which takes the image from each camera one by one and send it to other nodes at specific sampling rate.
 
-[Block Diagram] + [video or animation]
+<img src = "https://github.com/shiva-agrawal/autonomous_driving/blob/master/01_Sensors%20and%20Actuators/Camera/results.png"/>
 
 # Perception
 
@@ -110,15 +112,15 @@ After getting the sensor raw data or processed data, this module works to extrac
 * It is developed in Python with openCV and well tested on multiple images and also on road video stream.
 * Below is the block diagram for the complete process of canny edge detector algorithm and also the animation of the video result.
 
-![Canny Edge Detection steps](https://github.com/shiva-agrawal/Autonomous_Driving_Project/blob/master/02_Perception/01%20Canny%20Edge%20Detector/block_diagram.JPG)
-![Edge detection video](https://github.com/shiva-agrawal/Autonomous_Driving_Project/blob/master/02_Perception/01%20Canny%20Edge%20Detector/result.gif)
+![Canny Edge Detection steps](https://github.com/shiva-agrawal/autonomous_driving/blob/master/02_Perception/Canny%20Edge%20Detector/block_diagram.JPG)
+![Edge detection video](https://github.com/shiva-agrawal/autonomous_driving/blob/master/02_Perception/Canny%20Edge%20Detector/result.gif)
 
 ## Road Lane detection using Hough Transformation
 * It uses canny edge detector described above as base for lane detection. 
 * Further Hough transform (a mathematical form to represent the lines using slope and intercept in hough space) finds the lines in the Region of interest and provides the coordinates of all the lines.
 * This lines are then superimposed on the original image / stream of images to detect lanes continuously during driving.
 * This algorithm is use in the front mounted camera and is very important application for Autonomous driving.
-![process flow diagram with result](https://github.com/shiva-agrawal/Autonomous_Driving_Project/blob/master/02_Perception/02%20Lane%20Detection%20using%20Hough%20Transformation/lane_detection_process_flow_diagram.JPG)
+![process flow diagram with result](https://github.com/shiva-agrawal/autonomous_driving/blob/master/02_Perception/Lane%20Detection%20using%20Hough%20Transformation/lane_detection_process_flow_diagram.JPG)
 
 ## Vehicle Detection using HOG and SVC
 * HOG - Histogram of Oriented Gradient (a feature extracion algorithm in computer vision)
@@ -126,7 +128,7 @@ After getting the sensor raw data or processed data, this module works to extrac
 * A large dataset (images) of car and non car are taken as input. 
 * Pahse 1 - HOG is used to extract features from each image and stored
 * Phase 2 - These features are then given to SVC to train the model for vehicle detection.
-![Block diagram](https://github.com/shiva-agrawal/Autonomous_Driving_Project/blob/master/02_Perception/03%20Car%20Detection%20using%20HOG%20and%20SVC/processs_flow_diagram.JPG)
+![Block diagram](https://github.com/shiva-agrawal/autonomous_driving/blob/master/02_Perception/Car%20Detection%20using%20HOG%20and%20SVC/processs_flow_diagram.JPG)
 
 ## Trafiic sign classifier using CNN and Keras
 * Morethan 30,000 color images of different traffic signs are taken for the input.
@@ -144,7 +146,8 @@ After getting the sensor raw data or processed data, this module works to extrac
 * Use of sensor models in form of xacro files for simulation
 * Testing and documentation
 
-[Block Diagram] + [video or animation]
+![Simulation Results](https://github.com/shiva-agrawal/autonomous_driving/blob/master/02_Perception/Sensors%20simulation%20with%20ROS%20and%20Gazebo/test/results.png)
+
 
 # Robot/Vehicle Modeling and Control 
 For Autonomous robot or autonomous vehicle, smooth control (longitudinal and lateral) is final part in the complete process. The design of control system requires deep information about the system, here. vehicle/robot and hence modeling of the robot is also included here. Then design of various control systems and generation of final actuator signal which drives DC motor and/or servo motor for navagation is also part of this module.
@@ -156,7 +159,7 @@ For Autonomous robot or autonomous vehicle, smooth control (longitudinal and lat
 * Implementation of launch files 
 * Visualization of 3D robots in Gazebo Simulation environment
 
-[Block Diagram] + [video or animation]
+![Simulation Results](https://github.com/shiva-agrawal/autonomous_driving/blob/master/05_Modeling%20and%20Control/3D%20modelling%20and%20Visualization%20of%20Robots%20using%20ROS%20and%20Gazebo/test/results.jpg)
 
 
 
