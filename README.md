@@ -28,7 +28,7 @@ NOTE: This repository contains only the information and source code of the curre
     * [Vehicle Detection using HOG and SVC](#vehicle-detection-using-HOG-and-SVC)
     * [Trafiic sign classifier using CNN and Keras](#trafiic-sign-classifier-using-CNN-and-keras)
     * [Self driving Sensors Simulation with ROS and Gazebo](#self-driving-sensors-simulation-with-ros-and-gazebo)
-  * [Robot/Vehicle Modeling and Control](#robot-vehicle-modeling-and-control)
+  * [Robot/Vehicle Modeling and Control](#robot/vehicle-modeling-and-control)
     * [3D modelling and Visualization of Robots using ROS and Gazebo](#3d-modelling-and-visualization-of-robots-using-ros-and-Gazebo)
 
 # Softwares and Tools
