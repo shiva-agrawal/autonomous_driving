@@ -8,7 +8,7 @@ It can detect the shape even if it is broken or distorted a little bit.
 
 Following is the block diagram along with the output images at every stage of the process.
 
-![Block diagram](https://github.com/shiva-agrawal/Autonomous_Driving_Project/blob/master/02_Perception/02%20Lane%20Detection%20using%20Hough%20Transformation/lane_detection_process_flow_diagram.JPG)
+![Block diagram](https://github.com/shiva-agrawal/autonomous_driving/blob/master/02_Perception/Lane%20Detection%20using%20Hough%20Transformation/lane_detection_process_flow_diagram.JPG)
 
 ## Folder Details:
 * images (01....07.jpg) - images at every stage of the process.
