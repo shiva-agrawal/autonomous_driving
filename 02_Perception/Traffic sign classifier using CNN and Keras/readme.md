@@ -1,4 +1,4 @@
-# Traffic Sign Classifier using CNN and Keras (Pyhton) - Algorithm development and Testing using 50,000 images
+# Traffic Sign Classifier using CNN and Keras (Python) - Algorithm development and Testing using 50,000 images
 
 CNN classifier is trained using traffic sign images taken from he German Traffic Sign Benchmark is a multi-class, single-image classification challenge held at the International Joint Conference on Neural Networks (IJCNN) 2011.
 
