@@ -8,6 +8,10 @@ ROS kinetic is used for the developement along with Linux (Ubuntu 16.04). Differ
 
 The model is developed using URDF and XACRO and then LAUNCH files are used to run them in Gazebo evnironment.
 
+The simulated results in Gazebo are shown below:
+
+![simulated results](https://github.com/shiva-agrawal/autonomous_driving/blob/master/05_Modeling%20and%20Control/3D%20modelling%20and%20Visualization%20of%20Robots%20using%20ROS%20and%20Gazebo/test/results.jpg)
+
 ## Project Folder structure
 
 1. docs 
