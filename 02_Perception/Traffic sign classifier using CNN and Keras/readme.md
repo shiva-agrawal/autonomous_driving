@@ -2,7 +2,7 @@
 
 CNN classifier is trained using traffic sign images taken from he German Traffic Sign Benchmark is a multi-class, single-image classification challenge held at the International Joint Conference on Neural Networks (IJCNN) 2011.
 
-The dataset is available in form of .p files - train.p, test.p and valid.p
+The dataset used in the work is not uploaded in repository due to large size of file and hence can be provided on request.
 
 The datset contains traffic sign images each with size 32 x 32 x 3 (channel) i.e RGB
 Training images = 34799
@@ -60,9 +60,9 @@ to the working directory and then run the python algorithm for classfication.
 
 ## Folder details:
 * Traffic sign classifier.py - algorithm
-* train.p.zip - train dataset of images
-* test.p.zip - test dataset of images
-* valid.p.zip - validation dataset of images
+* train.p.zip - train dataset of images (not in repo)
+* test.p.zip - test dataset of images (not in repo)
+* valid.p.zip - validation dataset of images (not in repo)
 
 
 ## References:
