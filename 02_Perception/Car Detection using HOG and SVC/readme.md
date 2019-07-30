@@ -13,14 +13,14 @@ The model is found to be 97% accurate.
 
 Below is the block digram for the steps.
 
-![Block diagram](https://github.com/shiva-agrawal/Autonomous_Driving_Project/blob/master/02_Perception/03%20Car%20Detection%20using%20HOG%20and%20SVC/processs_flow_diagram.JPG)
+![Block diagram](https://github.com/shiva-agrawal/autonomous_driving/blob/master/02_Perception/Car%20Detection%20using%20HOG%20and%20SVC/processs_flow_diagram.JPG))
 
 For understanding of the HOG feature extraction, a demo script along with input and output image is also added to the repository. 
 (Refer Folder - HOG feature extraction_demo)
 
 The same is also shown below.
 
-![HOG](https://github.com/shiva-agrawal/Autonomous_Driving_Project/blob/master/02_Perception/03%20Car%20Detection%20using%20HOG%20and%20SVC/HOG%20feature%20extraction_demo/HOG_block_diagram.png)
+![HOG](https://github.com/shiva-agrawal/autonomous_driving/blob/master/02_Perception/Car%20Detection%20using%20HOG%20and%20SVC/HOG%20feature%20extraction_demo/HOG_block_diagram.png)
 
 ## Folder details:
 * HOG feature extraction_demo - folder containing python script and images for HOG algorithm demo.
