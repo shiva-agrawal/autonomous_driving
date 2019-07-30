@@ -63,7 +63,7 @@ Servo| front wheel steer actuator - for lateral control of vehicle
 
 # System architecture
 
-![Project Block diagram](https://github.com/shiva-agrawal/Autonomous_Driving_Project/blob/master/00_Overview/System%20Srchitecture.JPG)
+![Project Block diagram](https://github.com/shiva-agrawal/autonomous_driving/blob/master/00_Overview/System%20Srchitecture.JPG)
 
 # Sensors and Actuators
 
@@ -74,15 +74,17 @@ Actuator Drivers - Subscriber nodes - take motion control information and then a
 
 Complete Hardware Interfacing block diagram is shown below.
 
-<img src="https://github.com/shiva-agrawal/Autonomous_Driving_Project/blob/master/00_Overview/Hardware%20Interface%20Block%20Diagram.jpg" alt="Hardware Architecture" width="550" height = 450/>
+<img src="https://github.com/shiva-agrawal/autonomous_driving/blob/master/00_Overview/Hardware%20Interface%20Block%20Diagram.jpg" width=550 height = 450/>
 
 
 ## Ultrasonic sensors
-* As shown n the above block diagram, 10 sensors are interface with Arduino ATmega2560 development board. 
+* As shown in the above block diagram, 10 sensors are interface with Arduino ATmega2560 development board. 
 * Measurement from each sensor is taken one at a time in circular manner and the result for one cycle including all the sensors is send to raspberry pi serially. This driver is developed in C++ using Arduino Sketch.
-* ROS publisher node is developed in raspberry pi which read the data from arduino using serial port, decode the measurement data and publish to other nodes at specific sample rate.
+* Python script is developed and tested in raspberry pi to get the sensor measurement data. ROS node is planned in future for this. 
 
-[Block Diagram] + [video or animation]
+Hardware Interfacing | Distance measurement 
+-----|------------
+<img src = "https://github.com/shiva-agrawal/autonomous_driving/blob/master/01_Sensors%20and%20Actuators/Ultrasonic%20sensors%20(HC-SR04)/hardware.jpg" width = 300 height = 250/> | <img src = "https://github.com/shiva-agrawal/autonomous_driving/blob/master/01_Sensors%20and%20Actuators/Ultrasonic%20sensors%20(HC-SR04)/Ultrasonic_sensors_demo.gif" width = 300 height = 250/>
 
 ## 360 degree LIDAR 
 * As shown in above block diagram, RPLIDAR A1 is interfaced with raspberry pi directly using of the USB ports. 
