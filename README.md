@@ -74,7 +74,7 @@ Actuator Drivers - Subscriber nodes - take motion control information and then a
 
 Complete Hardware Interfacing block diagram is shown below.
 
-<img src="https://github.com/shiva-agrawal/autonomous_driving/blob/master/00_Overview/Hardware%20Interface%20Block%20Diagram.jpg" width="550" height = 450/>
+<img src="https://github.com/shiva-agrawal/autonomous_driving/blob/master/00_Overview/Hardware%20Interface%20Block%20Diagram.jpg" width=550 height = 450/>
 
 
 ## Ultrasonic sensors
@@ -84,7 +84,7 @@ Complete Hardware Interfacing block diagram is shown below.
 
 Hardware Interfacing | Distance measurement 
 -----|------------
-<imag src = "https://github.com/shiva-agrawal/autonomous_driving/blob/master/01_Sensors%20and%20Actuators/Ultrasonic%20sensors%20(HC-SR04)/hardware.jpg" width = 300 height = 250> | ![Live Distance measurement](https://github.com/shiva-agrawal/autonomous_driving/blob/master/01_Sensors%20and%20Actuators/Ultrasonic%20sensors%20(HC-SR04)/Ultrasonic_sensors_demo.gif)
+<img src = "https://github.com/shiva-agrawal/autonomous_driving/blob/master/01_Sensors%20and%20Actuators/Ultrasonic%20sensors%20(HC-SR04)/hardware.jpg" width = 300 height = 250/> | ![Live Distance measurement](https://github.com/shiva-agrawal/autonomous_driving/blob/master/01_Sensors%20and%20Actuators/Ultrasonic%20sensors%20(HC-SR04)/Ultrasonic_sensors_demo.gif)
 
 ## 360 degree LIDAR 
 * As shown in above block diagram, RPLIDAR A1 is interfaced with raspberry pi directly using of the USB ports. 
