@@ -55,9 +55,6 @@ Details are as:
 * (41, b'End of no passing')
 * (42, b'End of no passing by vehicles over 3.5 metric tons')
 
-NOTE: The dataset is zipped and then uploaded to repository. Hence after download, unzip the data and then add it 
-to the working directory and then run the python algorithm for classfication.
-
 ## Folder details:
 * Traffic sign classifier.py - algorithm
 * train.p.zip - train dataset of images (not in repo)
